@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;800&display=swap");
+
+/*  COLORS  */
+
+:root {
+  --clr-mustard: #ffc017;
+  --clr-dark-shade: rgba(25, 25, 25, 1);
+  --clr-green: #0f730c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
