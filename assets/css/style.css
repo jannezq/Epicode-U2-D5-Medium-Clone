@@ -113,3 +113,23 @@ section .hero-section{
   font-size: 18px;
   margin-top: 20px;
 }
+
+.headline{
+  height: 100vh;
+}
+
+section .headline-section{
+  display: flex;
+  align-items: center;
+}
+
+.headline-section .trend-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--clr-dark-shade);
+  border-radius: 50%;
+
+}
