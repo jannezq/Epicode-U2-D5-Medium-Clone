@@ -19,8 +19,8 @@
 
 .container {
   max-width: 1400px;
-  /* margin-inline: auto; */
-  margin-inline: 64px;
+  margin-inline: auto;
+  /* margin-inline: 64px; */
 }
 
 header {
@@ -67,35 +67,44 @@ nav .nav-bar {
   height: 25px;
 }
 
-.hero{
-display: flex;
-background-color: var(--clr-mustard);
+.hero {
+  /* display: flex; */
+  background-color: var(--clr-mustard);
+  height: 450px;
+  border-bottom: 1px solid black;
 }
 
-section .hero-section{
+section .hero-section {
+  position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items:center;
-  margin-bottom: 50px;
+  align-items: center;
+  overflow: hidden;
 }
 
-.text-area{
+.m-area {
+  position: absolute;
+  margin-left: 1200px;
+  height: 450px;
+}
+
+.text-area {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;  
+  align-items: flex-start;
 }
 
-.text-area h1{
+.text-area h1 {
   font-family: var(--font-headline);
   font-size: 106px;
   font-weight: 400;
   margin: 0;
-  margin-top: 70px;
+  margin-top: 50px;
   box-sizing: border-box;
 }
 
-.text-area > p{
+.text-area > p {
   font-size: 24px;
   font-weight: 400;
   font-family: var(--font-main);
@@ -114,16 +123,20 @@ section .hero-section{
   margin-top: 20px;
 }
 
-.headline{
-  height: 100vh;
+.headline {
+  height: 400px;
+  border-bottom: 1px solid rgb(131, 131, 131);
+  padding-bottom: 25px;
 }
 
-section .headline-section{
+section .headline-section {
   display: flex;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
-.headline-section .trend-icon{
+.headline-section .trend-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,5 +144,160 @@ section .headline-section{
   width: 30px;
   border: 1px solid var(--clr-dark-shade);
   border-radius: 50%;
+  margin-right: 10px;
+}
+.headline-section p {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 14px;
+}
 
+.headline-articles {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.article-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 33.33%;
+  padding-bottom: 20px;
+}
+
+.number-ind {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.number-ind span {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(228, 227, 227);
+}
+
+.deatil-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: var(--font-main);
+  margin-bottom: 10px;
+}
+
+.user img {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.user p {
+  font-size: 13px;
+}
+
+.healine-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.healine-main h4 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.inner-post .healine-main h4 {
+  margin-bottom: 10px;
+}
+
+.healine-main .subheading {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(121, 120, 120);
+  margin-bottom: 10px;
+}
+
+.span-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-family: var(--font-main);
+  color: rgb(175, 175, 174);
+}
+
+.span-info span {
+  margin-left: 10px;
+}
+
+.span-info button.tags {
+  border-radius: 50px;
+  margin-inline: 5px;
+  height: 25px;
+  width: 55px;
+  text-align: center;
+  color: rgb(129, 129, 129);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.span-info .bookmarku {
+  display: flex;
+  align-self: flex-end;
+}
+
+.main-topics {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.inner-topic-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 70%;
+}
+
+.topic-container {
+  /* position: relative; */
+  height: 134px;
+  margin-bottom: 80px;
+}
+
+.inner-post {
+  display: flex;
+}
+
+.healine-main.post {
+  margin-right: 20px;
+}
+
+.post-img-area img {
+  width: 200px;
+  height: 134px;
 }
