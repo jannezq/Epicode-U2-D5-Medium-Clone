@@ -24,13 +24,13 @@
 }
 
 header {
+  position: sticky;
+  top: 0px;
   border-bottom: 1px solid var(--clr-dark-shade);
 }
 
-.header-container {
+header div.headerBar {
   background-color: #ffc017;
-  position: sticky;
-  top: 0px;
 }
 
 .header-sticky {
@@ -69,6 +69,7 @@ nav .nav-bar {
   color: white;
   border: 1px solid var(--clr-dark-shade);
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .container .logo {
@@ -130,6 +131,7 @@ section .hero-section {
   line-height: 24px;
   font-size: 18px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .headline {
@@ -272,6 +274,7 @@ section .headline-section {
   color: rgb(129, 129, 129);
   background-color: rgb(240, 240, 240);
   border: 1px solid rgb(240, 240, 240);
+  cursor: pointer;
 }
 
 .span-info .bookmarku {

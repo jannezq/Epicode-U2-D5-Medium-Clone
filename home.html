@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="m-area ">
                     <div class="m-inner-animation">
-                        <div class="m-container">
+                        <div id="class-container" class="m-container">
                             <svg class="svg-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585 462"
                                 width="585" height="462" preserveAspectRatio="xMidYMid meet"
                                 style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
@@ -5900,33 +5900,42 @@
 
     <Script>
 
-        const ms = document.querySelectorAll(".svg-container:first-of-type g");
-        function toggleVisibility() {
-            const index = Math.floor(Math.random() * ms.length);
-            const m = ms[index];
-            if (m.style.opacity === "0") {
-                m.style.opacity = "1";
-            } else {
-                m.style.opacity = "0";
-            }
-            setTimeout(toggleVisibility, 50);
+        // const mNode = document.querySelectorAll(".svg-container:first-of-type g");
+        // function toggleVisibility() {
+        //     const index = Math.floor(Math.random() * mNode.length);
+        //     const m = mNode[index];
+        //     if (m.style.opacity === "0") {
+        //         m.style.opacity = "1";
+        //     } else {
+        //         m.style.opacity = "0";
+        //     }
+        //     setTimeout(toggleVisibility, 20);
+        // }
+
+        // toggleVisibility();
+
+        function svgRandomizer() {
+            let mNode = document.querySelectorAll("svg>g>g>g");
+            let randomNode = Math.floor(Math.random() * mNode.length); // toggle.length = 560
+            let randomer = Math.floor(Math.random() * 2);
+            mNode[randomNode].style.opacity = randomer;
+        }
+        function svgAnimation() {
+            setInterval(svgRandomizer, 70);
         }
 
-        toggleVisibility();
+        window.onload = function () {
+            svgAnimation();
 
-        // function changeCss() {
-        //     var bodyElement = document.querySelector("body");
-        //     var navElement = document.querySelector("header");
-        //     navElement.style.backgroundColor = 'white'
+        };
 
-        // }
 
         window.onscroll = function () {
             var nav = document.querySelector('header-container');
-            if (window.pageYOffset > 50) {
-                nav.classList.add("header-sticky");
+            if (window.pageYOffset > 100) {
+                nav.classList.add('header-sticky');
             } else {
-                nav.classList.remove("header-sticky");
+                nav.classList.remove('header-sticky');
             }
         }
 
